@@ -10,7 +10,7 @@ export async function exportCanvas(
   backgroundColor: string,
 ) {
   return axios.post(
-    `${API_URL}/export`,
+    `${API_URL}/api/canvas/export`,
     { width, height, elements, backgroundColor },
     { responseType: "blob" },
   );
